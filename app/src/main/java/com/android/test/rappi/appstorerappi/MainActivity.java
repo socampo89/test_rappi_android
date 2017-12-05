@@ -39,6 +39,11 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/*
+AUTHOR: SERGIO ANDRES OCAMPO lOPEZ
+
+ */
+
 public class MainActivity extends AppCompatActivity implements ListEntryAdapter.ItemClickListener, AdapterView.OnItemClickListener,View.OnClickListener {
 
     //Views
