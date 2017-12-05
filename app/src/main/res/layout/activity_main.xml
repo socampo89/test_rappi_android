@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+    <!-- The main content view -->
+    <android.support.constraint.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.android.test.rappi.appstorerappi.MainActivity">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewFeeds"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/wrapper_no_data_no_conn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/labelNoCon"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textAppearance="@style/DetailLabels"
+                android:text="@string/label_try"
+                />
+
+            <Button
+                android:id="@+id/btn_try"
+                android:layout_centerHorizontal="true"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/labelNoCon"
+                android:text="@string/try_label"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress"
+                android:indeterminate="true"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:padding="5dp"
+        android:background="#111">
+
+        <TextView
+            android:id="@+id/label_categories"
+            android:text="@string/label_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/DetailLabels"
+            android:padding="10dp"
+            android:textSize="25sp"/>
+
+        <ListView android:id="@+id/left_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:layout_below="@+id/label_categories"/>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
+

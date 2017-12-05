@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">App Store Rappi</string>
+    <string name="summary">Summary</string>
+    <string name="price">Price</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="label_categories">Categorias</string>
+    <string name="try_label">Intentar de nuevo</string>
+    <string name="label_try">No se ha podido cargar los datos o hubo un problema en la conneccion. Intenta de nuevo</string>
+    <string name="action_show_app_info">Acerca de nosotros</string>
+    <string name="action_settings">Configuraciones</string>
+    <string name="AppStore">Link</string>
+</resources>
